@@ -1,28 +1,16 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f9f9f9;
 }
-
-h1 {
-    color: #ff4081;
+#quiz-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
 }
-
 button {
-    background-color: #ff4081;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
     cursor: pointer;
-    margin: 10px;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #d6336c;
-}
-
-#result {
-    margin-top: 20px;
 }
