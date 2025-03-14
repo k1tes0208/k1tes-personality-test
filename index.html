@@ -3,26 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopBack Fashion Personality Test</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Personality Test</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Find Your Fashion Persona! 👗✨</h1>
-    
-    <div id="quiz">
-        <p>Q1: What’s your go-to fashion style?</p>
-        <button onclick="selectAnswer('glam')">Glam & Chic ✨</button>
-        <button onclick="selectAnswer('sporty')">Sporty & Casual 🏃‍♀️</button>
-        <button onclick="selectAnswer('edgy')">Edgy & Alternative 🖤</button>
+    <div id="quiz-container">
+        <h1 id="question-title"></h1>
+        <div id="options"></div>
     </div>
-
-    <div id="result" style="display:none;">
-        <h2>Your Style Persona: <span id="persona"></span></h2>
-        <img id="persona-img" src="" alt="Your Fashion Style">
-        <p id="persona-desc"></p>
-        <button onclick="restartQuiz()">Try Again</button>
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>
