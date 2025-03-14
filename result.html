@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Result</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="result-container">
+        <h1 id="result-title"></h1>
+        <img id="result-img" src="" alt="Personality Image">
+        <p id="result-description"></p>
+        <div id="brand-links"></div>
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const type = urlParams.get("type");
+        const results = {
+            "Explorer": { img: "explorer.png", desc: "You are a fearless explorer...", brands: ["Nike", "Adidas"] },
+            "Observer": { img: "observer.png", desc: "You love soaking in the details...", brands: ["Lululemon", "Uniqlo"] },
+            "Adventurer": { img: "adventurer.png", desc: "You seek thrills and excitement...", brands: ["North Face", "Patagonia"] },
+            "Connector": { img: "connector.png", desc: "You thrive on social energy...", brands: ["Gucci", "Louis Vuitton"] }
+        };
+        document.getElementById("result-title").textContent = type;
+        document.getElementById("result-img").src = results[type].img;
+        document.getElementById("result-description").textContent = results[type].desc;
+        document.getElementById("brand-links").innerHTML = results[type].brands.map(brand => `<a href="#">${brand}</a>`).join(" ");
+    </script>
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Result</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="result-container">
+        <h1 id="result-title"></h1>
+        <img id="result-img" src="" alt="Personality Image">
+        <p id="result-description"></p>
+        <div id="brand-links"></div>
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const type = urlParams.get("type");
+        const results = {
+            "Explorer": { img: "explorer.png", desc: "You are a fearless explorer...", brands: ["Nike", "Adidas"] },
+            "Observer": { img: "observer.png", desc: "You love soaking in the details...", brands: ["Lululemon", "Uniqlo"] },
+            "Adventurer": { img: "adventurer.png", desc: "You seek thrills and excitement...", brands: ["North Face", "Patagonia"] },
+            "Connector": { img: "connector.png", desc: "You thrive on social energy...", brands: ["Gucci", "Louis Vuitton"] }
+        };
+        document.getElementById("result-title").textContent = type;
+        document.getElementById("result-img").src = results[type].img;
+        document.getElementById("result-description").textContent = results[type].desc;
+        document.getElementById("brand-links").innerHTML = results[type].brands.map(brand => `<a href="#">${brand}</a>`).join(" ");
+    </script>
+</body>
+</html>
